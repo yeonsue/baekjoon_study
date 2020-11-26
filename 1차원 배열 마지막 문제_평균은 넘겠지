@@ -1,0 +1,15 @@
+a=input("ㄱㄱ")
+b=a.split(" ")
+k=0
+n=0
+for i in range(1,len(b)):
+    k=k+int(b[i])
+average=k/int(b[0])
+for i in range(1,len(b)):
+    if average<int(b[i]):
+        n=n+1
+    if average>int(b[i]):
+        n=n
+answer=n/int(b[0])*100
+round(answer,3)
+print(round(answer,3),"%")
