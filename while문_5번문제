@@ -1,0 +1,13 @@
+a=int(input("ㄱㄱ"))
+aa=a
+N=0
+while True:
+    left=a//10
+    right=a%10
+    new_a=left+right
+    new_right=new_a%10
+    a=right*10+new_right
+    N=N+1
+    if (a==aa):
+        break
+print(N)
