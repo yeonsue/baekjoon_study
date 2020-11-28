@@ -1,0 +1,10 @@
+def fee(n):
+    if n==1:
+        return 1
+    if n==0:
+        return 0
+    
+    return fee(n-2)+fee(n-1)
+    
+n=int(input())
+print(fee(n))
