@@ -1,0 +1,15 @@
+n=int(input())
+def asd(n):
+    q=0
+    for i in range(n):
+        s=str(i)
+        l=len(s)
+        a=0
+        for k in range(l):
+            a=a+int(s[k])
+        ans=a+i
+        if ans==n:
+            q=i
+            break
+    return q
+print(asd(n))
