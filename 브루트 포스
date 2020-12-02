@@ -1,0 +1,15 @@
+n=input()
+def dung(n):
+    a=n.split()
+    b=list(map(int,a))
+    new_b=[b[i*2+1:(i+1)*2+1] for i in range(int(a[0]))]
+    
+    ans=""
+    for i in range(int(a[0])):
+        m=1
+        for k in range(int(a[0])):
+            if new_b[i][0]<new_b[k][0] and new_b[i][1]<new_b[k][1]:
+                m=m+1
+        ans=ans+" "+str(m)
+    return ans.strip()
+print(dung(n))
